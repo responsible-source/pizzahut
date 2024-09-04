@@ -1,19 +1,16 @@
 "use client"
-import React from 'react'
+import Image from 'next/image'
+import React, {useState} from 'react'
 
 
-const page = () => {
-  // const [email, Setemail] = useState()
-  // const [password, Setpassword] = useState()
+const Page = () => {
+  const [email, Setemail] = useState()
+  const [password, Setpassword] = useState()
 
-  // const handleSubmit = (ev) =>{
-  //   ev.preventDefault();
-  //   fetch('/api/register', {
-  //     method: 'POST',
-  //     body: JSON.stringify({email, password}),
-  //     headers:{'Content-Type': 'application/json'},
-  //   });
-  // }
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    
+  }
   return (
     <div className='mt-10'>
         <div>
@@ -27,7 +24,7 @@ const page = () => {
               Or login with provider
             </div>
             <button className='flex justify-center gap-2'>
-              <img src="/google.png" alt="google" className='w-5 h-5' />
+              <Image src="/google.png" alt="google" className='w-5 h-5' />
               Login with google
               </button>
         </form>
@@ -35,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page;

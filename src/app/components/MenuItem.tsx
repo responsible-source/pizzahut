@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function MenuItem() {
@@ -5,7 +6,7 @@ export default function MenuItem() {
     <div>
         <div className='bg-gray-200 p-4 rounded-lg text-center group hover:bg-white hover:shadow-md hover:shadow-black/25 transition-all'>
             <div className='text-center'>
-            <img src="/pizza.png" alt="pizza" className='max-h-auto max-w-24 block m-auto' />
+            <Image src="/pizza.png" alt="pizza" className='max-h-auto max-w-24 block m-auto' />
             </div>
             <h4 className='font-semibold text-xl my-3'>Pepperoni Pizza</h4>
             <p className='text-gray-500 text-sm'>

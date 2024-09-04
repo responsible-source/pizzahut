@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { IoMdArrowRoundForward } from "react-icons/io";
 
@@ -13,7 +14,7 @@ function Hero() {
             </div>
         </div>
         <div className='w-[100%] md:w-[55%]'>
-            <img src="/pizza.png" alt="pizza" className='object-contain' />
+            <Image src="/pizza.png" alt="pizza" className='object-contain' />
         </div>
     </div>
   )
