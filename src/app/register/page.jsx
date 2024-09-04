@@ -1,19 +1,19 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 
 
 const page = () => {
-  const [email, Setemail] = useState()
-  const [password, Setpassword] = useState()
+  // const [email, Setemail] = useState()
+  // const [password, Setpassword] = useState()
 
-  const handleSubmit = (ev) =>{
-    ev.preventDefault();
-    fetch('/api/register', {
-      method: 'POST',
-      body: JSON.stringify({email, password}),
-      headers:{'Content-Type': 'application/json'},
-    });
-  }
+  // const handleSubmit = (ev) =>{
+  //   ev.preventDefault();
+  //   fetch('/api/register', {
+  //     method: 'POST',
+  //     body: JSON.stringify({email, password}),
+  //     headers:{'Content-Type': 'application/json'},
+  //   });
+  // }
   return (
     <div className='mt-10'>
         <div>
